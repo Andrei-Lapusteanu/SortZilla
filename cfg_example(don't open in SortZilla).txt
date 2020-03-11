@@ -1,0 +1,19 @@
+E:\Download\rvl-cdip\images
+E:\Download\rvl-cdip\labels\train - normal slash.txt
+C:\Users\Andrei\Desktop\Test
+Letter~0~Letter~100~0
+Form~1~Form~100~0
+E-mail~2~E-mail~100~0
+Handwritten~3~Handwritten~100~0
+Advertisement~4~Advertisement~100~0
+Scientific Report~5~Scientific Report~100~0
+Scientific Publication~6~Scientific Publication~100~0
+Specification~7~Specification~100~0
+File Folder~8~File Folder~100~0
+News Article~9~News Article~100~0
+Budget~10~Budget~100~0
+Invoice~11~Invoice~100~0
+Presentation~12~Presentaion~100~0
+Questionnaire~13~Questionnaire~100~0
+Resume~14~Resume~100~0
+Memo~15~Memo~100~0

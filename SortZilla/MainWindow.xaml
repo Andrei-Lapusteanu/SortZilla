@@ -1,0 +1,88 @@
+﻿<Window x:Class="SortZilla.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SortZilla"
+        mc:Ignorable="d"
+        Title="SortZilla" Height="590" Width="770" WindowStyle="ToolWindow" ResizeMode="NoResize" Icon="img/sortzilla-start.png" WindowStartupLocation="CenterScreen" Background="Black" Opacity="0.99">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo/>
+    </Window.TaskbarItemInfo>
+    <Grid Name="MainGrid">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF303030"/>
+                <GradientStop Color="#FF303030" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="imageLogo" HorizontalAlignment="Right" Height="130" VerticalAlignment="Top" Width="700" Source="img/SortZillaLogo_2.png" Margin="0,0,37,0"/>
+        <ListBox x:Name="listBoxCurrentConfig" BorderBrush="Gray" HorizontalAlignment="Left" Height="229" Margin="14,259,0,0" VerticalAlignment="Top" Width="322" Background="#FF3C3C3C" Foreground="White" SelectionChanged="listBoxCurrentConfig_SelectionChanged" MouseDown="listBoxCurrentConfig_MouseDown" Uid="workZilla"/>
+        <Button x:Name="buttonAddConfig" Content="Submit Config" HorizontalAlignment="Left" Margin="506,337,0,0" VerticalAlignment="Top" Width="118" Height="26" Click="buttonAddConfig_Click" Background="#FF3C3C3C" Foreground="White" Style="{StaticResource BorderedButtons}"/>
+        <Button x:Name="buttonDeleteConfig" Content="Delete Config" HorizontalAlignment="Left" Margin="629,337,0,0" VerticalAlignment="Top" Width="110" Height="26" Click="buttonDeleteConfig_Click" Background="#FF3C3C3C" Foreground="White" Style="{StaticResource BorderedButtons}"/>
+        <Button x:Name="buttonLoadConfig" Content="Load Config" HorizontalAlignment="Left" Margin="347,431,0,0" VerticalAlignment="Top" Width="127" Height="26" Click="buttonLoadConfig_Click" Background="#FF3C3C3C" Foreground="White" Style="{StaticResource BorderedButtons}"/>
+        <Button x:Name="buttonSaveConfig" Content="Save Config" HorizontalAlignment="Left" Margin="347,462,0,0" VerticalAlignment="Top" Width="127" Height="26" Click="buttonSaveConfig_Click" Background="#FF3C3C3C" Foreground="White" Style="{StaticResource BorderedButtons}"/>
+        <Label x:Name="labelCurrentConfig" Content="Current configuration :" HorizontalAlignment="Left" Margin="14,230,0,0" VerticalAlignment="Top" Width="131" Foreground="White"/>
+        <Button x:Name="buttonWorkZilla" Content=" " HorizontalAlignment="Left"  Margin="506,431,0,0" VerticalAlignment="Top" Width="233" Height="57" Click="buttonWorkZilla_Click" Foreground="#FFBF0F27" FontWeight="Bold" FontSize="24" Style="{StaticResource BorderlessButtons}" Uid="workZilla">
+            <Button.Background>
+                <ImageBrush ImageSource="img/sortzilla-start.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonSetPath" Content="Data Set folder path" HorizontalAlignment="Left" Margin="347,259,0,0" VerticalAlignment="Top" Width="127" Height="26" Click="buttonSetPath_Click"  Style="{StaticResource BorderedButtons}" Background="#FF3C3C3C" Foreground="White"/>
+        <Label x:Name="labelPath" Content="Path to data set :" HorizontalAlignment="Left" Margin="34,130,0,0" VerticalAlignment="Top" Width="99" Foreground="White"/>
+        <Label x:Name="labelRealPath" Content="" HorizontalAlignment="Left" Margin="138,130,0,0" VerticalAlignment="Top" Width="519" Foreground="White"/>
+        <Button x:Name="buttonSetLabelsPath" Content="Labels file path" HorizontalAlignment="Left" Margin="347,299,0,0" VerticalAlignment="Top" Width="127" Height="26" Click="buttonSetLabelsPath_Click" Background="#FF3C3C3C" Foreground="White" Style="{StaticResource BorderedButtons}" BorderBrush="#FF818181"/>
+        <Label x:Name="labelCurrentConfig_Copy" Content="Tell SortZilla what &#xA;to chew on:" HorizontalAlignment="Left" Margin="370,212,0,0" VerticalAlignment="Top" Width="104" Foreground="White" Height="40" RenderTransformOrigin="0.83,0.5"/>
+        <Label x:Name="labelCurrentConfig_Copy1" Content="Tell SortZilla how to chew:" HorizontalAlignment="Left" Margin="548,223,0,0" VerticalAlignment="Top" Width="161" Foreground="White"/>
+        <Label x:Name="labelLabelspath" Content="Path to labels :" HorizontalAlignment="Left" Margin="34,161,0,0" VerticalAlignment="Top" Width="99" Foreground="White"/>
+        <Label x:Name="labelRealLabelsPath" Content="" HorizontalAlignment="Left" Margin="138,161,0,0" VerticalAlignment="Top" Width="519" Foreground="White"/>
+        <Label x:Name="labelOutputFolder" Content="Output folder : " HorizontalAlignment="Left" Margin="34,191,0,0" VerticalAlignment="Top" Width="99" Foreground="White"/>
+        <Button x:Name="buttonSetOutputFolder" Content="Set output folder" HorizontalAlignment="Left" Margin="347,337,0,0" VerticalAlignment="Top" Width="127" Height="26" Click="buttonSetOutputFolder_Click" Background="#FF3C3C3C" Foreground="White" Style="{StaticResource BorderedButtons}"/>
+        <Label Content="1." HorizontalAlignment="Left" Margin="338,201,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" Width="36"/>
+        <Label Content="2." HorizontalAlignment="Left" Margin="506,200,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" RenderTransformOrigin="0.838,0.506"/>
+        <Label Content="3." HorizontalAlignment="Left" Margin="341,373,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+        <Label x:Name="labelCurrentConfig_Copy2" Content="SortZilla's smart:" HorizontalAlignment="Left" Margin="376,399,0,0" VerticalAlignment="Top" Width="98" Foreground="White"/>
+        <Label Content="4." HorizontalAlignment="Left" Margin="500,378,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" Height="53"/>
+        <Label x:Name="labelRealOutputFolder" Content="" HorizontalAlignment="Left" Margin="138,191,0,0" VerticalAlignment="Top" Width="519" Foreground="White"/>
+        <ProgressBar Name="progressBarStatus"  HorizontalAlignment="Left" Height="25" Margin="14,514,0,0" VerticalAlignment="Top" Width="725" Background="#FF3C3C3C" Maximum="200" BorderBrush="{x:Null}">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF09E696" Offset="0"/>
+                    <GradientStop Color="#FF1A9568" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <Label Name="labelStatus" Content="Status: SortZilla's taking a nap." HorizontalAlignment="Left" Margin="14,488,-8,0" VerticalAlignment="Top" Foreground="White" Width="746"/>
+        <Label x:Name="labelFolderName" Content="New folder name:" HorizontalAlignment="Left" Margin="506,254,0,0" VerticalAlignment="Top" Width="105" Foreground="White"/>
+        <Label x:Name="labelMapFrom" Content="Map from:" HorizontalAlignment="Left" Margin="506,280,0,0" VerticalAlignment="Top" Width="100" Foreground="White"/>
+        <Label x:Name="labelNumberOfFiles" Content="Number of files:" HorizontalAlignment="Left" Margin="506,306,0,0" VerticalAlignment="Top" Width="105" Foreground="White"/>
+        <TextBox x:Name="textBoxFolderName" HorizontalAlignment="Left" Height="21" Margin="611,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Background="#FF303030" Foreground="White" BorderBrush="#FF575A63"/>
+        <ComboBox x:Name="comboBoxMapFrom" HorizontalAlignment="Left" Margin="611,285,0,0" VerticalAlignment="Top" Width="128" IsSynchronizedWithCurrentItem="False" Height="21">
+            <ComboBoxItem Content="Letter"/>
+            <ComboBoxItem Content="Form"/>
+            <ComboBoxItem Content="E-mail"/>
+            <ComboBoxItem Content="Handwritten"/>
+            <ComboBoxItem Content="Advertisement"/>
+            <ComboBoxItem Content="Scientific Report"/>
+            <ComboBoxItem Content="Scientific Publication"/>
+            <ComboBoxItem Content="Specification"/>
+            <ComboBoxItem Content="File Folder"/>
+            <ComboBoxItem Content="News Article"/>
+            <ComboBoxItem Content="Budget"/>
+            <ComboBoxItem Content="Invoice"/>
+            <ComboBoxItem Content="Presentaion"/>
+            <ComboBoxItem Content="Questionnaire"/>
+            <ComboBoxItem Content="Resume"/>
+            <ComboBoxItem Content="Memo"/>
+        </ComboBox>
+        <TextBox x:Name="textBoxNumberOfFiles" HorizontalAlignment="Left" Height="21" Margin="611,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Background="#FF303030" Foreground="White" BorderBrush="#FF575A63"/>
+        <Label x:Name="labelFour" Content="UNLEASH" HorizontalAlignment="Left" Margin="537,388,0,0" VerticalAlignment="Top" Width="202" Foreground="#FFFF0051" FontSize="30" FontFamily="Unispace"/>
+        <Image Name="imgPathDataSet" HorizontalAlignment="Left" Height="15" Margin="14,136,0,0" VerticalAlignment="Top" Width="15" Source="img/warning.png"/>
+        <Image Name="imgPathLabels" HorizontalAlignment="Left" Height="15" Margin="14,167,0,0" VerticalAlignment="Top" Width="15" Source="img/warning.png"/>
+        <Image Name="imgPathOutput" HorizontalAlignment="Left" Height="15" Margin="14,198,0,0" VerticalAlignment="Top" Width="15" Source="img/warning.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="117" Margin="548,96,0,0" Stroke="#FF7F7F7F" VerticalAlignment="Top" Width="191"/>
+        <Label Content="TIPS" HorizontalAlignment="Left" Margin="548,96,0,0" VerticalAlignment="Top" Foreground="#FF57FFA3" FontFamily="Unispace"/>
+        <TextBox Name="textBoxTips" IsReadOnly="True" HorizontalAlignment="Left" Height="93" Margin="548,120,0,0" TextWrapping="Wrap" Text="&gt; &quot;Data Set folder path&quot; - If you ONLY HAVE part of the database, for example, only &quot;images/imagesa&quot;, it's much faster to select &quot;imagesa&quot; instead of &quot;images&quot;&#xD;&#xA;- If you have the entire database, it does not matter that much if you select either &quot;images&quot; folder or any &quot;images&lt;char&gt;&quot; subfolder.&#xD;&#xA;&#xA;&gt; &quot;Labels file path&quot; - Select the .txt file you need. I've tested only &quot;train - normal slash.txt&quot;, you can find this file in the main folder of the project.&#xA;&#xA;&gt; If you want to sort all files from a specific mapping, enter &quot;-1&quot; at step number 2. Note that the progress bar won't work in this case.&#xA;&#xA;&gt; &quot;Save Config&quot; prompts you to save to a .txt file. It save &quot;Path to data set&quot;, &quot;Path to labels&quot;, &quot;Output Folder&quot; and your Current Configuration.&#xA;&#xA;&gt; Best is to first set all your paths (step 1), and then save the config. Next time you use this tool, load up the config and only add your mappings.&#xA;&#xA;&gt; Lines 220 and 240 in MainWindow.xaml.cs - Default opening path for browsing is set to &quot;C:&quot;. You can change this to the path of the database (so you don't always browse from &quot;C:&quot;).&#xA;&#xA;&gt; Expect bugs :)" VerticalAlignment="Top" Width="191" Background="{x:Null}" Foreground="White" BorderBrush="#FF7E7E7E"/>
+        <Label Content="(scroll down)" HorizontalAlignment="Left" Margin="661,95,0,0" VerticalAlignment="Top" Height="23" Width="78" Foreground="White"/>
+    </Grid>
+</Window>

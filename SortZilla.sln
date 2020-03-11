@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortZilla", "SortZilla\SortZilla.csproj", "{A656F1EE-A37A-4CE1-BDA7-F67717EC065B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A656F1EE-A37A-4CE1-BDA7-F67717EC065B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A656F1EE-A37A-4CE1-BDA7-F67717EC065B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A656F1EE-A37A-4CE1-BDA7-F67717EC065B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A656F1EE-A37A-4CE1-BDA7-F67717EC065B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD7512F0-EB8A-4690-BC82-F7739A3BC2AF}
+	EndGlobalSection
+EndGlobal
