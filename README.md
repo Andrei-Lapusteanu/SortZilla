@@ -4,8 +4,9 @@
 
 Sorts a very large data set of images to different folders by their labels
 
-<a href="https://imgur.com/tHiQhVD"><img src="https://i.imgur.com/tHiQhVD.png" title="source: imgur.com" /></a><br><br>
+<a href="https://imgur.com/tHiQhVD"><img src="https://i.imgur.com/tHiQhVD.png" title="source: imgur.com" /></a><br>
 *SortZilla UI (running)*
+<br>
 <a href="https://imgur.com/I2I9Ctw"><img src="https://i.imgur.com/I2I9Ctw.png" title="source: imgur.com" /></a><br>
 *SortZilla UI (stopped)*
 
@@ -21,5 +22,5 @@ Sorts a very large data set of images to different folders by their labels
 - Due to the very large image data set required to run the algorithm (30+GB), which is not uploaded, it is not possible to run the application
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODUzMjEyMCwtMTkxNzU3OTIzMV19
+eyJoaXN0b3J5IjpbMTgwMTUzNTU3NCwtMTkxNzU3OTIzMV19
 -->
