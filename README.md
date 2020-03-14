@@ -5,7 +5,7 @@
 Sorts a very large data set of images to different folders by their labels
 
 <a href="https://imgur.com/niTFswF"><img src="https://i.imgur.com/niTFswF.png" title="source: imgur.com" /></a> <br>
-*SortZilla UI*
+*SortZilla UI (running)*
 
 # Technologies
 - All written using **C#**
@@ -19,6 +19,6 @@ Sorts a very large data set of images to different folders by their labels
 - Due to the very large image data set required to run the algorithm (30+GB), which is not uploaded, it is not possible to run the application
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDI5NzYwODcsLTE5MTc1NzkyMzFdfQ
+eyJoaXN0b3J5IjpbLTE5MDQ1MjM5NDUsLTE5MTc1NzkyMzFdfQ
 ==
 -->
