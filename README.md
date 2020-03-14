@@ -1,2 +1,9 @@
 # SortZilla
- Sort a very large data set of different images (using their assigned labels/tags) to different folders, to substantially decrease the time that would have been required to manually sort the images
+
+## Summary
+
+Sorts a very large data set of images to to different folders by their labels
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5MTc1NzkyMzFdfQ==
+-->
